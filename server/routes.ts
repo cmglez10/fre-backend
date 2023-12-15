@@ -22,6 +22,7 @@ router
   .get('/api/federaciones', federacionesController.getAll)
   .get('/api/categorias', categoriasController.getAll)
   .get('/api/clasificaciones', clasificacionesController.getAll)
+  .get('/api/clasificaciones/:id', clasificacionesController.getById)
   .get('/api/competiciones', competicionesController.getAll)
   .get('/api/equipos', equiposController.getAll)
   .get('/api/equipo/:id/:year', equiposController.getByIdYear)
